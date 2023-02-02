@@ -26,7 +26,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    line-height: 1;
+    line-height: 2;
 }
 a, abbr, acronym, address, applet, b, big, blockquote, body, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, u, ul, var {
     margin: 0;
