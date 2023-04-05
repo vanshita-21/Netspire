@@ -1,0 +1,59 @@
+body{
+  margin: 0%;
+}
+
+
+
+.rounded-pill {
+  padding: 8px;
+}
+
+#contain {
+  display: flex;
+}
+.container {
+margin-left: 20px;
+  padding-top: 70px;
+  padding-left: 71px;
+  width: 35%;
+}
+.container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 55px;
+  color: #4e2323;
+}
+
+.bt{
+  font-family:'Times New Roman', Times, serif;
+  font-style:calc();
+  background-color: rgb(176, 76, 120);
+  padding: 5px 9px 5px 9px;
+  padding-left: 9px;
+  
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+  border-radius: 13px;
+  border-color: rgb(243, 195, 214);
+}
+
+.bt:hover{
+  color:rgb(255, 255, 255);
+  background-color: rgb(218, 144, 177);
+}
+
+
+
+
+
+
+.ftr{
+  background-color: rgb(170,76,120);
+}
+.ftrr{
+  background-color: rgb(209, 184, 193);
+}
+
+.header{width: 100%;
+background-image: linear-gradient(to right, rgb(170,76,120), rgb(176,79,124,0.486));}
+.nav-link{color: rgb(255, 255, 255)!important;}

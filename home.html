@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="nav.css" <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Are You Serious' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Artifika' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Karla:ital@1&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  
+  <title>Home
+  </title>
+
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+
+    .row {
+      margin-right: -800px;
+    }
+
+    .mt-3,
+    .my-3 {
+      margin-top: -2rem !important;
+    }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    .team {
+      margin-top:90px;
+     
+      width: 100%;
+      height: 90vh;
+      background-image: url(image/bg1.jpg);
+      background-size: cover;
+      background-position: center;
+      /* border: 6px solid aquamarine; */
+    }
+
+    .team h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+
+    .team h1 span {
+      color: #fac031;
+      margin-left: 15px;
+      font-family: mv boli;
+    }
+
+    .team h1 span::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: #fac031;
+      display: block;
+      position: relative;
+      bottom: 15px;
+    }
+
+    .team .team_box {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 13%;
+    }
+
+    .team .team_box .profile {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      margin: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+      transition: 0.4s;
+    }
+
+    .team .team_box .profile:hover {
+      border-radius: 20px;
+      height: 320px;
+    }
+
+    .team .team_box .profile img {
+      width: 220px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      transition: 0.4s;
+    }
+
+    .team .team_box .profile:hover img {
+      border-radius: 20px;
+      margin-top: -230px;
+    }
+
+    .team .team_box .profile .info {
+      position: absolute;
+      text-align: center;
+      top: 25%;
+      transition: 0.4s;
+    }
+
+    .team .team_box .profile:hover .info {
+      top: 60%;
+    }
+
+    .team .team_box .profile .info .name {
+      color: #fac031;
+      margin-bottom: 15px;
+    }
+
+    .team .team_box .profile .info .bio {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto 10px auto;
+    }
+
+    .team .team_box .profile .info .team_icon i {
+      margin: 10px 5px 5px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .team .team_box .profile .info .team_icon i:hover {
+      color: #fac031;
+    }
+
+    .view{
+            background-color:rgb(235, 202, 202);
+        }
+
+        .col-auto{
+            margin: 21px;
+
+
+
+        }
+
+    .alert{
+      width:100%;
+      background-color: blanchedalmond;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 900;
+      display: none;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <section class="header">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand">
+        <img src="Ns.jfif" width="30px" height="30px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto tcl">
+          <li class="nav-item active">
+            <a class="nav-link " href="/">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/brand.html">Brand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/small_business.html">Small Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/content_creator.html">Content Creator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+
+
+
+        </ul>
+        <div class="mx-2">
+          <button class="rounded-pill" data-toggle="modal" data-target="#loginModal">Login</button>
+
+        </div>
+
+
+      </div>
+
+    </nav>
+  </section>
+
+  <!-- Login Page -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to NetSpire</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address / Phone No.</label>
+              <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp"
+                placeholder="Enter email">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your Password">
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <div class="etc-login-form">
+              <p>forgot your password? <a href="#">click here</a></p>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+
+
+
+          </form>
+          <div class="etc-login-form">
+            <p>new user? <a data-toggle="modal" data-target="#signupModal" href="#">create new account</a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- signup Page -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get a NetSpire Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your name">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Phone Number</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your Phone no.">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1" placeholder="Confirm Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Section 1------------------------------------------- -->
+  <section>
+    <div id="contain">
+
+      <div class="container">
+
+        <h1>Get Inspire,With NETSPIRE</h1>
+        <br>
+        <h4>Use our platform for all aspects of your creator workflow to automate and streamline your campaigns...</h4>
+        <br>
+        <button class="bt" data-toggle="modal" data-target="#clie">I'M a Client</button>
+        <button class="bt" data-toggle="modal" data-target="#influ">I'M an Influencer</button>
+
+
+
+      </div>
+
+      <div class="v">
+        <video src="front.mp4" controls autoplay loop="loop" height="550px"
+          style="padding-top: 20px; padding-right: 60px;"></video>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------I'm an influencer-------------------------- -->
+  <section>
+    <div class="modal fade" id="influ" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+    <form class="view" id="loginForm">
+      <div class = "alert">Your message sent</div>
+      <div class="form-row align-items-center">
+          <div class="col-auto">
+           <br>
+          </div>
+          <div class="col-auto" style="margin-left: -30px;">
+              <label for="socialmedia">Name:</label>
+              <input type="text"  id="name" placeholder="Jane Doe">
+          </div>
+
+          <div class="col-auto">
+              <label for="social media platform">Choose a platform:</label>
+              <select id="platform" name="platform">
+                  <option value="">-- Choose a platform --</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="FaceBook">FaceBook</option>
+                  <option value="YouTube">YouTube</option>
+                  <option value="others">other</option>
+              </select>
+
+          </div>
+          <div class="col-auto">
+              <label for="socialmedia">Social Media ID:</label>
+              <input type="id" id="socialmediaid" name="socialmediaid">
+
+          </div>
+          <div class="col-auto">
+              <label for="Category">Category:</label>
+              <select id="Category" name="Category" >
+                  <option value="">-- Category --</option>
+                  <option value="Food">Food</option>
+                  <option value="Fashion">Fashion</option>
+                  <option value="Beauty">Beauty</option>
+                  <option value="Skin Care">Skin Care</option>
+                  <option value="Blogging">Blogging</option>
+                  <option value="other">other</option>
+              </select>
+
+              
+          </div>
+          <div class="col-auto">
+              <label for="type">Type:</label>
+              <select id="type1" name="type1">
+                  <option value="">-- Choose a type --</option>
+                  <option value="Nano Influencer">Nano Influencer(1k-10k)</option>
+                  <option value="Macro Influencer">Macro Influencer(10k-100k)</option>
+                  <option value="Macro Influencer">Micro Influencer(100k-1M)</option>
+                  <option value="Macro Influencer">Mega Influencer(1M+)</option>
+              </select>
+          </div>
+          <div class="col-auto">
+              <label for="location">Location:</label>
+              <input type="text" id="location" name="location" placeholder="Click to detect location" onclick="getLocation()">
+
+          </div>
+          <div class="col-auto">
+              <label for="price-range">Enter Your Price Value:</label>
+              <input type="text" id="Price" name="Price" placeholder="  in Rs  ">
+
+          </div>
+      
+          </div>
+      </div>
+      
+      <div class="col-auto" style="
+      position: relative;
+      ">
+          <button style="margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);" type="submit" class="btn btn-primary mb-2">Submit</button>
+      </div>
+      
+      </div>
+  </form>
+  
+
+</div>
+
+</div>
+</div>
+</div>
+
+  </section>
+
+
+  <!-- ------------------------I'm an client-------------------------- -->
+
+  <section>
+    <div class="modal fade" id="clie" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="padding-top: 10px;">
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="view">
+            <div class="form-row align-items-center">
+                <div class="col-auto">
+                 <br>
+                </div>
+                <div class="col-auto" style="margin-left: -30px;">
+                  <label for="socialmedia">Name:</label>
+                  <input type="text"  id="inlineFormInput" placeholder="Jane Doe">
+              </div>
+    
+                <div class="col-auto">
+                    <label for="social media platform">Choose a platform:</label>
+                    <select id="platform" name="platform">
+                        <option value="">-- Choose a platform --</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="FaceBook">FaceBook</option>
+                        <option value="YouTube">YouTube</option>
+                        <option value="others">other</option>
+                    </select>
+    
+                </div>
+                <div class="col-auto">
+                    <label for="socialmedia">social media id:</label>
+                    <input type="id" id="id" name="id">
+    
+                </div>
+                <div class="col-auto">
+                    <label for="Category">Category:</label>
+                    <select id="Category" name="Category" onchange="toggleOther()">
+                        <option value="">-- Category --</option>
+                        <option value="Food">Food</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Beauty">Beauty</option>
+                        <option value="Skin Care">Skin Care</option>
+                        <option value="Blogging">Blogging</option>
+                        <option value="other">other</option>
+                    </select>
+    
+                    <div id="other" style="display:none;">
+                        <label for="other">Enter Category:</label>
+                        <input type="text" id="other" name="other">
+                    </div>
+                </div>
+                
+                <div class="col-auto">
+                    <label for="price-range">Price Range:</label>
+                    <select id="price-range" name="price-range" onchange="toggleOther()">
+                        <option value="">-- Select Price Range --</option>
+                        <option value="2000-4000">Rs2000-4000</option>
+                        <option value="4000-8000">Rs4000-8000</option>
+                        <option value="8000-12000">Rs8000-10000</option>
+                        <option value="10000+">Rs10000 or more</option>
+                    </select>
+                </div>
+                
+                <div class="col-auto">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Click to detect location"
+                        onclick="getLocation()">
+    
+                </div>
+                
+            
+                </div>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </div>
+            
+            </div>
+        </form>
+  
+
+</div>
+
+</div>
+</div>
+</div>
+
+  </section>
+
+
+  <section>
+    <div style="text-align: center; 
+    margin-top: 100px;">
+      <h2 style="font-family: Playfair Display; font-size: 3rem;">Why...Influencer Marketing ?</h2>
+    </div>
+    <div class="container my-4" style="margin-left: 50px; padding-top: 15px;">
+      <div class="row featurette d-flex justify-content-center align-items-center shadow p-3 mb-5 bg-white rounded">
+
+        <div class="col-md-7 order-md-2">
+
+          <p style="text-align: center; font-family: Karla;" class="lead">Influencers have the power to drive more
+            people towards your
+            products or services. Influencer marketing is becoming a favorite among digital marketers and business
+            owners. Influencer marketing allows big brands to attract more customers and enables small businesses to
+            scale
+            up by getting them more visibility. Influencer marketing involves collaborating with popular and relevant
+            influencers in your place to promote your brand and increase your revenue.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="img-fluid" src="influencer_marketing-removebg-preview.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div style="text-align: center; 
+    margin-top: 100px;">
+      <h2 style="font-family: Playfair Display; font-size: 3rem;">Why work with us?</h2>
+    </div>
+    <div class="row">
+      <div class="column" style="margin-top: 50px;">
+        <img src="Home images/1.jpeg" style="width: 350px; margin-left: 115px;">
+        <img src="Home images/2.jpeg" style="width: 350px; margin-left: 100px;">
+        <img src="Home images/3.jpeg" style="width: 350px; margin-left: 100px;">
+      </div>
+      <div class="column" style="margin-top: 50px; margin-bottom: 20px;">
+        <img src="Home images/4.jpeg" style="width: 350px; margin-left: 115px;">
+        <img src="Home images/5.jpeg" style="width: 350px; margin-left: 100px;">
+        <img src="Home images/6.jpeg" style="width: 350px; margin-left: 100px;">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------Team member------------------------------- -->
+
+
+  <section>
+    <div class="team">
+      <h1>Our<span>Team</span></h1>
+
+      <div class="team_box">
+        <div class="profile">
+          <img src="Home images/riddhi.jpg">
+
+          <div class="info">
+            <h2 class="name">Riddhi</h2>
+            <p class="bio">Team Leader</p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile">
+          <img src="Home images/anshita.jpg">
+
+          <div class="info">
+            <h2 class="name">Anshita</h2>
+            <p class="bio">Market and Research Analyst </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile">
+          <img src="Home images/vanshika.JPG">
+
+          <div class="info">
+            <h2 class="name">Vanshika</h2>
+            <p class="bio">Frontend Developer</p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile">
+          <img src="Home images/vanshita.jpg">
+
+          <div class="info">
+            <h2 class="name">Vanshita</h2>
+            <p class="bio">Backend Developer</p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile">
+          <img src="Home images/aryanshi.jpeg">
+
+          <div class="info">
+            <h2 class="name">Aryanshi</h2>
+            <p class="bio">Data Analyst</p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="ftr text-center text-lg-start text-muted">
+    <!-- Section: Social media -->
+    <section class="ftrr d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block dark">
+        <span style="color: black; font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get
+          connected with us on social networks:</b></span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 link-secondary" style="padding-right: 15px;">
+          <img src="facebook.png" height="28px">
+        </a>
+        <a href="" class="me-4 link-secondary" style="padding-right: 15px; padding-left: 15px;">
+          <img src="Twitter.png" height="25px">
+          <a href="" class="me-4 link-secondary" style="padding-right: 15px; padding-left: 15px;">
+            <img src="google.png" height="25px">
+          </a>
+          <a href="" class="me-4 link-secondary" style="padding-right: 15px; padding-left: 15px;">
+            <img src="Instagram.png" height="25px">
+          </a>
+          <a href="" class="me-4 link-secondary" style="padding-right: 15px; padding-left: 15px;">
+            <img src="linkedIn (2).png" height="30px">
+          </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="ftr">
+      <div class="container text-center text-md-start mt-5" style="color: white;">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="footer_toplft download-icons">
+            <h5>Download Our Creator's app Now!</h5>
+            <br>
+            <a href="http://bit.ly/Kofplaystore" target="_blank"><img
+                src="https://www.kofluence.com/wp-content/uploads/2021/02/googleplaybadge.svg" alt=""></a>
+            <a href="https://bit.ly/kofappstore" target="_blank"><img
+                src="https://www.kofluence.com/wp-content/uploads/2021/02/appstorebadge.svg" alt=""></a>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Company
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Careers</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Contact Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Resources
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Blog and Feed</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Request Demo</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Privacy</h6>
+            <p>
+              <a href="#!" class="text-reset">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Terms and Conditions</a>
+            </p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+    <!-- Copyright -->
+    <div class="ftr text-center p-4" style="color: white;">
+
+
+
+      <div class="footer_btmsec d-flex flex-row justify-content-between align-items-center" style="padding-left: 79px;">
+        <a href="https://www.kofluence.com" target="_blank"><img class="footer-brand-logo" src="Ns.jfif"
+            style="height: 50px; width: 50px;" alt=""></a>
+        <h4 style="padding-right: 1180px;">NetSpire</h4>
+      </div>
+
+
+      <b>© 2023 Copyright:</b>
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/"><b>NetSpire.com</b></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Footer -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <script>
+      function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showPosition(position) {
+  const lat = position.coords.latitude;
+  const lng = position.coords.longitude;
+  const geocoder = new google.maps.Geocoder();
+  const latlng = new google.maps.LatLng(lat, lng);
+  
+  geocoder.geocode({ 'latLng': latlng }, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        const locationInput = document.getElementById("location");
+        locationInput.value = results[0].formatted_address;
+      } else {
+        alert("No results found");
+      }
+    } else {
+      alert("Geocoder failed due to: " + status);
+    }
+  });
+}
+    </script>
+
+  <!-- -----------------login------------------- -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./mail.js"></script>
+</body>
+
+</html>
